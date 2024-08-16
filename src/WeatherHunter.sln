@@ -1,13 +1,19 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1706.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherHunter.Abstractions", "WeatherHunter.Abstractions\WeatherHunter.Abstractions.csproj", "{7937B894-F870-4904-B7FF-FE19EF0D8A5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherHunter.Crawler", "WeatherHunter.Crawler\WeatherHunter.Crawler.csproj", "{B3327345-EFE9-4A2D-A5C7-F5778902BFEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherHunter.Crawler", "Crawler\WeatherHunter.Crawler\WeatherHunter.Crawler.csproj", "{B3327345-EFE9-4A2D-A5C7-F5778902BFEF}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B6B93A0A-AEB6-47EC-A27A-90C604AAE34C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Crawler", "Crawler", "{C17450CF-B2C3-4032-9267-432549BC6574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sources", "Sources", "{EBAA8A29-C36D-4AB7-A42C-FB69514A0937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherHunter.Crawler.Sources.RandomSource", "Crawler\Sources\WeatherHunter.Crawler.Sources.RandomSource\WeatherHunter.Crawler.Sources.RandomSource.csproj", "{D8FC603A-357E-4FB5-B411-472362226858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherHunter.Crawler.Sources.Abstractions", "Crawler\Sources\WeatherHunter.Crawler.Sources.Abstractions\WeatherHunter.Crawler.Sources.Abstractions.csproj", "{95A64A38-0139-4197-BDDA-F9366A572583}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,15 +29,25 @@ Global
 		{B3327345-EFE9-4A2D-A5C7-F5778902BFEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3327345-EFE9-4A2D-A5C7-F5778902BFEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3327345-EFE9-4A2D-A5C7-F5778902BFEF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6B93A0A-AEB6-47EC-A27A-90C604AAE34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6B93A0A-AEB6-47EC-A27A-90C604AAE34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6B93A0A-AEB6-47EC-A27A-90C604AAE34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6B93A0A-AEB6-47EC-A27A-90C604AAE34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FC603A-357E-4FB5-B411-472362226858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FC603A-357E-4FB5-B411-472362226858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FC603A-357E-4FB5-B411-472362226858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FC603A-357E-4FB5-B411-472362226858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A64A38-0139-4197-BDDA-F9366A572583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A64A38-0139-4197-BDDA-F9366A572583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A64A38-0139-4197-BDDA-F9366A572583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A64A38-0139-4197-BDDA-F9366A572583}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34A99E73-F432-4FF5-A678-324DC4983B5F}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95A64A38-0139-4197-BDDA-F9366A572583} = {EBAA8A29-C36D-4AB7-A42C-FB69514A0937}
+		{B3327345-EFE9-4A2D-A5C7-F5778902BFEF} = {C17450CF-B2C3-4032-9267-432549BC6574}
+		{EBAA8A29-C36D-4AB7-A42C-FB69514A0937} = {C17450CF-B2C3-4032-9267-432549BC6574}
+		{D8FC603A-357E-4FB5-B411-472362226858} = {EBAA8A29-C36D-4AB7-A42C-FB69514A0937}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,5 @@
 ﻿using Serilog;
+using WeatherHunter.Crawler.RandomSource;
 
 namespace WeatherHunter.Crawler;
 
@@ -21,6 +22,7 @@ public class Program
             .ConfigureServices(services =>
             {
                 services.AddHostedService<Worker>();
+                services.UseRandomWeatherSource();
             })
             .UseSerilog((context, loggerConfiguration) => loggerConfiguration
                 .ReadFrom.Configuration(context.Configuration))

@@ -7,6 +7,6 @@ services:
     image: wheatherhunter-crawler
     build:
       context: .
-      dockerfile: WeatherHunter.Crawler/Dockerfile
+      dockerfile: Crawler/WeatherHunter.Crawler/Dockerfile
     environment:
       - DOTNET_ENVIRONMENT=Production

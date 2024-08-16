@@ -18,4 +18,8 @@
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sources\WeatherHunter.Crawler.Sources.Abstractions\WeatherHunter.Crawler.Sources.Abstractions.csproj" />
+    <ProjectReference Include="..\Sources\WeatherHunter.Crawler.Sources.RandomSource\WeatherHunter.Crawler.Sources.RandomSource.csproj" />
+  </ItemGroup>
 </Project>
